@@ -16,7 +16,7 @@ body {
 
 /* ---------- LISTA CLASSI CLEARFIX ----------- */
 
-.top-nav-bar::after , .first-section-float-container::after {
+.top-nav-bar::after , .firstS-float::after , .secondS-float::after{
   content: "";
   display: table;
   clear: both;
@@ -90,41 +90,68 @@ header {
 }
 
 /* ---------- INIZIO MAIN SECTION CONTENENTE N° X SEZIONI ------------- */
+
 .section-wrapper {
   margin: auto;
   height: 500px;
+}
+.section-bottom-bar {
   width: 98%;
   border-bottom: 1px solid black;
 }
-.first-section {
-  margin: auto;
-
-  height: 100%;
-
-}
-.first-section-title {
+/*  --- SEZIONE 1 --- */
+.firstS-title {
   text-align: center;
   padding-top: 30px;
 }
 /* FLOAT 3 COLONNE */
-.first-section-float-container {
+.firstS-float {
   margin: auto;
   width: 70%;
   padding-top: 30px;
 }
-.fs-float-column {
+.firstS-column {
   width: 26%;
   float: left;
 
 }
-.first-section-float-container .central-margin {
+.firstS-float .central-margin {
   margin-left: 7%;
   margin-right: 7%;
 }
-.fs-float-column hr {
+.firstS-column hr {
   width: 32px;
-  align: center;
+  display: inline-block;
 }
-.fs-float-column img {
+.firstS-column img {
   height: 150px;
+}
+
+/*  --- SEZIONE 2 --- */
+.secondS-float {
+  margin: auto;
+  width: 60%;
+  padding-top: 30px;
+}
+.secondS-column {
+  width: 40%;
+  float: left;
+}
+.secondS-column img {
+  height: 300px;
+}
+.secondS-float .left-margin {
+  margin-left: 20%;
+}
+
+/* Sezione 2 Bottom */
+.secondS-bottom {
+  line-height: 50px;
+  width: 80%;
+  margin-left: 20%;
+  /* text-align: center; */
+}
+.secondS-bot-column {
+  display: inline-block;
+  width: 40%;
 }
