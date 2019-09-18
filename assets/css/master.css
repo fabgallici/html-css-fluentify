@@ -6,6 +6,7 @@
 
 body {
   background-color: pink;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .green-button {
@@ -70,7 +71,7 @@ header {
 .top-section-wrapper {
   background-color: #0D325A;
   height: 440px;
-  background-image: url(../img/oldman.png);
+  background-image: url("../img/oldman.png");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -154,4 +155,18 @@ header {
 .secondS-bot-column {
   display: inline-block;
   width: 40%;
+}
+
+/* --- SEZIONE 3 --- */
+.third-section {
+  background-color: #0D325A;
+  background-image: url("../img/onetoone_session_pc.png");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 70% 100%;
+}
+.thirdS-left {
+  width: 30%;
+  margin-left: 20%;
+  padding-top: 150px;
 }
