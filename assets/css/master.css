@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+}
+
+.top-nav-bar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ---------------- HEADER ----------------- */
+header {
+  background-color: #0D325A;
+  /* height: 500px; */
+}
+
+.header-wrapper {
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.top-nav-bar {
+  /* width: 100%; */
+}
+/* float */
+.fluentify-logo , .left-link {
+  float: left;
+}
+
+.fluentify-logo {
+  margin-right: 25px;
+}
+/* Sezione menù di sinistra */
+.left-top-bar {
+  padding-top: 15px;
+}
+.left-link a , .right-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  line-height: 30px;
+  padding-right: 15px;
+}
+/* Sezione menù di destra */
+.right-link {
+  float: right;
+}
+.right-link a {
+  color: white;
+}
+
+/* ----------------  FINE - HEADER ----------------- */
