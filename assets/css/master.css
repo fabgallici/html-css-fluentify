@@ -14,7 +14,9 @@ body {
   color: white;
 }
 
-.top-nav-bar::after {
+/* ---------- LISTA CLASSI CLEARFIX ----------- */
+
+.top-nav-bar::after , .first-section-float-container::after {
   content: "";
   display: table;
   clear: both;
@@ -85,4 +87,44 @@ header {
 }
 .plan-structure a {
   padding: 10px;
+}
+
+/* ---------- INIZIO MAIN SECTION CONTENENTE N° X SEZIONI ------------- */
+.section-wrapper {
+  margin: auto;
+  height: 500px;
+  width: 98%;
+  border-bottom: 1px solid black;
+}
+.first-section {
+  margin: auto;
+
+  height: 100%;
+
+}
+.first-section-title {
+  text-align: center;
+  padding-top: 30px;
+}
+/* FLOAT 3 COLONNE */
+.first-section-float-container {
+  margin: auto;
+  width: 70%;
+  padding-top: 30px;
+}
+.fs-float-column {
+  width: 26%;
+  float: left;
+
+}
+.first-section-float-container .central-margin {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.fs-float-column hr {
+  width: 32px;
+  align: center;
+}
+.fs-float-column img {
+  height: 150px;
 }
