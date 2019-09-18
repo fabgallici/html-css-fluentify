@@ -20,6 +20,15 @@ body {
   font-weight: bold;
 }
 
+.green-text {
+  color: #7BBC00;
+}
+.grey-text {
+  color: rgb(60, 60, 60);
+}
+.lightBlue-text {
+  color: #98C8F8;
+}
 /* ---------- LISTA CLASSI CLEARFIX ----------- */
 
 .top-nav-bar::after , .firstS-float::after , .secondS-float::after{
@@ -180,7 +189,7 @@ header {
 .four-section {
   background-image: url("../img/shakehands.jpg");
   background-repeat: no-repeat;
-  background-size: 600px;
+  background-size: 550px;
   background-position: 25% 40%;
 }
 .four-right {
@@ -198,6 +207,19 @@ header {
 .real-life-container .didascalia {
   width: 450px;
   text-align: center;
-  color: #98C8F8;
   font-size: 0.9em;
+}
+
+/* --- SEZIONE 5 --- */
+.fifth-section {
+  background-image: url("../img/set.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: 50% 25%;
+}
+.fifth-center {
+  width: 30%;
+  margin-left: 35%;
+  padding-top: 330px;
+  text-align: center;
 }
