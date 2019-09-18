@@ -8,6 +8,12 @@ body {
   background-color: pink;
 }
 
+.green-button {
+  background-color: #7BBC00;
+  text-decoration: none;
+  color: white;
+}
+
 .top-nav-bar::after {
   content: "";
   display: table;
@@ -57,3 +63,26 @@ header {
 }
 
 /* ----------------  FINE - HEADER ----------------- */
+
+/* -------- TOP SECTION -----------*/
+.top-section-wrapper {
+  background-color: #0D325A;
+  height: 440px;
+  background-image: url(../img/oldman.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.top-section {
+  width: 40%;
+  padding: 150px 0 0 150px;
+}
+.top-section h1 {
+  color: white;
+}
+.plan-structure {
+  margin-top: 30px;
+}
+.plan-structure a {
+  padding: 10px;
+}
