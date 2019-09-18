@@ -13,6 +13,11 @@ body {
   background-color: #7BBC00;
   text-decoration: none;
   color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 /* ---------- LISTA CLASSI CLEARFIX ----------- */
@@ -86,9 +91,9 @@ header {
 .plan-structure {
   margin-top: 30px;
 }
-.plan-structure a {
+/* .plan-structure a {
   padding: 10px;
-}
+} */
 
 /* ---------- INIZIO MAIN SECTION CONTENENTE N° X SEZIONI ------------- */
 
@@ -169,4 +174,30 @@ header {
   width: 30%;
   margin-left: 20%;
   padding-top: 150px;
+}
+
+/* --- SEZIONE 4 --- */
+.four-section {
+  background-image: url("../img/shakehands.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: 25% 40%;
+}
+.four-right {
+  width: 30%;
+  margin-left: 55%;
+  padding-top: 150px;
+}
+.real-life-container {
+  margin-top: 25px;
+}
+.real-life-button {
+  float: left;
+  margin-right: 10px;
+}
+.real-life-container .didascalia {
+  width: 450px;
+  text-align: center;
+  color: #98C8F8;
+  font-size: 0.9em;
 }
