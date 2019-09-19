@@ -5,11 +5,36 @@
 }
 
 body {
-  background-color: pink;
+  background-color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
-.green-button {
+/* --------- TEXT STYLE In Comune------------- */
+h1 {
+  color: white;
+  font-size: 2.7em;
+}
+h2 {
+  line-height: 40px;
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.4em;
+}
+h2, h3 {
+  color: rgb(74, 74, 74);
+}
+h5 {
+  font-size: 1em;
+  margin: 10px 0;
+  color: rgb(153, 153, 153);
+}
+p {
+  color: rgb(153, 153, 153);
+}
+
+.green-link {
   background-color: #7BBC00;
   text-decoration: none;
   color: white;
@@ -25,13 +50,19 @@ body {
 }
 .grey-text {
   color: rgb(60, 60, 60);
+  font-size: 0.8em;
 }
 .lightBlue-text {
   color: #98C8F8;
 }
-/* ---------- LISTA CLASSI CLEARFIX ----------- */
+.placement-link {
+  color: rgb(152, 200, 248);
+  display: inline-block;
+  line-height: 30px;
+}
+/* ---------- LISTA CLEARFIX ----------- */
 
-.top-nav-bar::after , .firstS-float::after , .secondS-float::after{
+.top-nav-bar::after , .firstS-float::after , .secondS-float::after , .secondS-bottom::after{
   content: "";
   display: table;
   clear: both;
@@ -39,46 +70,53 @@ body {
 /* ---------------- HEADER ----------------- */
 header {
   background-color: #0D325A;
-  /* height: 500px; */
 }
 
 .header-wrapper {
   margin: auto;
-  width: 80%;
-  height: 100%;
-  border: 1px solid white;
+  width: 62%;
+  padding-top: 20px;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
-.top-nav-bar {
-  /* width: 100%; */
+.top-bar-container {
+  padding-top: 15px;
+  line-height: 30px;
 }
-/* float */
+
 .fluentify-logo , .left-link {
   float: left;
 }
 
 .fluentify-logo {
-  margin-right: 25px;
+  margin-right: 40px;
 }
-/* Sezione menù di sinistra */
-.left-top-bar {
-  padding-top: 15px;
-}
+
 .left-link a , .right-link a {
   color: white;
   text-decoration: none;
-  font-size: 0.8em;
-  line-height: 30px;
-  padding-right: 15px;
+  margin-right: 15px;
 }
-/* Sezione menù di destra */
+
 .right-link {
   float: right;
 }
-.right-link a {
-  color: white;
-}
 
+.green-top-bar-link {
+  font-size: 1em;
+  padding: 0 15px;
+}
+.login-link {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid rgb(71, 131, 172);
+  padding: 0 20px;
+}
+.tutor-link {
+  color: rgb(134, 153, 173) !important;
+}
 /* ----------------  FINE - HEADER ----------------- */
 
 /* -------- TOP SECTION -----------*/
@@ -91,44 +129,47 @@ header {
   background-position: right bottom;
 }
 .top-section {
-  width: 40%;
-  padding: 150px 0 0 150px;
+  width: 30%;
+  margin-left: 18%;
+  padding-top: 120px;
 }
-.top-section h1 {
-  color: white;
-}
+
 .plan-structure {
   margin-top: 30px;
 }
-/* .plan-structure a {
-  padding: 10px;
-} */
 
 /* ---------- INIZIO MAIN SECTION CONTENENTE N° X SEZIONI ------------- */
 
+/* Classi Main Section in comune */
 .section-wrapper {
   margin: auto;
   height: 500px;
 }
 .section-bottom-bar {
   width: 98%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
-/*  --- SEZIONE 1 --- */
-.firstS-title {
+/*  -------- SEZIONE 1 --------- */
+.section-1-wrapper {
+  margin: auto;
+  height: 690px;
   text-align: center;
+}
+.firstS-title {
   padding-top: 30px;
 }
 /* FLOAT 3 COLONNE */
 .firstS-float {
-  margin: auto;
+  margin-left: 20%;
   width: 70%;
-  padding-top: 30px;
+  padding-top: 70px;
 }
 .firstS-column {
   width: 26%;
   float: left;
-
+}
+.firstS-column h3 {
+  height: 70px;
 }
 .firstS-float .central-margin {
   margin-left: 7%;
@@ -137,16 +178,21 @@ header {
 .firstS-column hr {
   width: 32px;
   display: inline-block;
+  margin: 10px 0;
 }
 .firstS-column img {
   height: 150px;
+  margin-bottom: 60px;
+}
+.firstS-float .firstS-column h3 {
+  color: #7BBC00;
 }
 
-/*  --- SEZIONE 2 --- */
+/*  --------- SEZIONE 2 --------- */
 .secondS-float {
   margin: auto;
-  width: 60%;
-  padding-top: 30px;
+  width: 50%;
+  padding: 30px 0;
 }
 .secondS-column {
   width: 40%;
@@ -156,22 +202,42 @@ header {
   height: 300px;
 }
 .secondS-float .left-margin {
+  padding-top: 40px;
   margin-left: 20%;
 }
 
 /* Sezione 2 Bottom */
 .secondS-bottom {
-  line-height: 50px;
-  width: 80%;
   margin-left: 20%;
-  /* text-align: center; */
+  width: 90%;
 }
-.secondS-bot-column {
-  display: inline-block;
-  width: 40%;
+.secondS-bot-left {
+  width: 25%;
+  float: left;
+}
+.secondS-bot-right {
+  width: 45%;
+  float: left;
+  margin-left: 8%;
+}
+.secondS-bot-right h2 {
+  display: inline;
+}
+.Occupation {
+  font-size: 1.7em;
+  width: 250px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid grey;
+  margin: 0 5px 0 25px;
+  line-height: 40px;
+}
+option[value=""][disabled] {
+  display: none;
 }
 
-/* --- SEZIONE 3 --- */
+/* ------------- SEZIONE 3 ------------- */
 .third-section {
   background-color: #0D325A;
   background-image: url("../img/onetoone_session_pc.png");
@@ -180,9 +246,12 @@ header {
   background-position: 70% 100%;
 }
 .thirdS-left {
-  width: 30%;
+  width: 20%;
   margin-left: 20%;
   padding-top: 150px;
+}
+.thirdS-left h2 {
+  color: white;
 }
 
 /* --- SEZIONE 4 --- */
