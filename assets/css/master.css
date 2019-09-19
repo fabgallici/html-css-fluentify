@@ -25,6 +25,10 @@ h3 {
 h2, h3 {
   color: rgb(74, 74, 74);
 }
+h4 {
+  color: #5F6163;
+  line-height: 40px;
+}
 h5 {
   font-size: 1em;
   margin: 10px 0;
@@ -57,12 +61,11 @@ p {
 }
 .placement-link {
   color: rgb(152, 200, 248);
-  display: inline-block;
   line-height: 30px;
 }
 /* ---------- LISTA CLEARFIX ----------- */
 
-.top-nav-bar::after , .firstS-float::after , .secondS-float::after , .secondS-bottom::after{
+.top-nav-bar::after , .firstS-float::after , .secondS-float::after , .secondS-bottom::after , .sev-float::after {
   content: "";
   display: table;
   clear: both;
@@ -160,20 +163,21 @@ header {
 }
 /* FLOAT 3 COLONNE */
 .firstS-float {
-  margin-left: 20%;
+  /* margin-left: 20%; */
+  margin: auto;
   width: 70%;
   padding-top: 70px;
 }
 .firstS-column {
-  width: 26%;
+  width: 27.33%;
   float: left;
 }
 .firstS-column h3 {
   height: 70px;
 }
 .firstS-float .central-margin {
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 .firstS-column hr {
   width: 32px;
@@ -309,3 +313,49 @@ background-position: 80% 100%;
 .five-left h2 {
   color: white;
 }
+
+/* --- SEZIONE 7 --- */
+.sev-title {
+  padding-top: 60px;
+}
+.sev-title h2 {
+  text-align: center;
+}
+.sev-float {
+  margin: auto;
+  width: 55%;
+  padding-top: 50px;
+}
+.sev-col {
+  width: 27.33%;
+  float: left;
+}
+.sev-mid-col {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.sev-col img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.row {
+  height: 120px;
+}
+.row p {
+  font-size: 0.9em;
+}
+.btm-row1 , .btm-row2 , .btm-row3 {
+  border-top: 5px solid;
+  padding-top: 15px;
+}
+.btm-row1 , .btm-row1 a {
+  color: #98C8F8;
+}
+.btm-row2 , .btm-row2 a {
+  color: #F8B71C;
+}
+.btm-row3 , .btm-row3 a {
+  color: #7FB802;
+}
+
+/* --- SEZIONE FAQ --- */
