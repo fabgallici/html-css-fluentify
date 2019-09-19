@@ -359,3 +359,14 @@ background-position: 80% 100%;
 }
 
 /* --- SEZIONE FAQ --- */
+.faq-wrapper {
+  background-color: #0F335A;
+  height: 135px;
+}
+.faq-left h2 {
+  color: white;
+}
+.faq-left {
+  margin-left: 17%;
+  padding-top: 30px;
+}
